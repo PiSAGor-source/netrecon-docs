@@ -1,0 +1,99 @@
+{
+  "zone": "netreconapp.com",
+  "records": [
+    {
+      "type": "A",
+      "name": "api",
+      "content": "46.224.154.240",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "A",
+      "name": "dashboard",
+      "content": "46.224.154.240",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "A",
+      "name": "license",
+      "content": "46.224.154.240",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "A",
+      "name": "vault",
+      "content": "46.224.154.240",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "A",
+      "name": "vpn",
+      "content": "46.224.154.240",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "CNAME",
+      "name": "key1._domainkey",
+      "content": "key1.netreconapp.com._domainkey.migadu.com",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "CNAME",
+      "name": "key2._domainkey",
+      "content": "key2.netreconapp.com._domainkey.migadu.com",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "CNAME",
+      "name": "key3._domainkey",
+      "content": "key3.netreconapp.com._domainkey.migadu.com",
+      "proxied": false,
+      "ttl": "auto"
+    },
+    {
+      "type": "MX",
+      "name": "netreconapp.com",
+      "content": "aspmx1.migadu.com",
+      "priority": 10,
+      "ttl": "auto"
+    },
+    {
+      "type": "MX",
+      "name": "netreconapp.com",
+      "content": "aspmx2.migadu.com",
+      "priority": 20,
+      "ttl": "auto"
+    },
+    {
+      "type": "TXT",
+      "name": "_dmarc",
+      "content": "v=DMARC1; p=quarantine;",
+      "ttl": "auto"
+    },
+    {
+      "type": "TXT",
+      "name": "hosted-email-verify=c2pralsn",
+      "content": "Migadu verification record",
+      "ttl": "auto"
+    },
+    {
+      "type": "TXT",
+      "name": "netreconapp.com",
+      "content": "hosted-email-verify=c2pralsn",
+      "ttl": "auto"
+    },
+    {
+      "type": "TXT",
+      "name": "netreconapp.com",
+      "content": "v=spf1 include:spf.migadu.com -all",
+      "ttl": "auto"
+    }
+  ]
+}

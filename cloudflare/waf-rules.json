@@ -1,0 +1,104 @@
+{
+  "description": "NetRecon Cloudflare WAF custom rules for the netreconapp.com zone.",
+  "rules": [
+    {
+      "name": "Block SQL Injection Attempts",
+      "description": "Blocks requests containing common SQL injection patterns in URI, query string, headers, and body.",
+      "expression": "(http.request.uri.query contains \"UNION SELECT\" or http.request.uri.query contains \"' OR 1=1\" or http.request.uri.query contains \"DROP TABLE\" or http.request.uri.query contains \"--\" or http.request.body.raw contains \"UNION SELECT\" or http.request.body.raw contains \"' OR 1=1\")",
+      "action": "block",
+      "priority": 1,
+      "enabled": true,
+      "logging": {
+        "enabled": true
+      }
+    },
+    {
+      "name": "API Rate Limit — Global",
+      "description": "Limits all API endpoints to 1000 requests per minute per client IP to prevent abuse.",
+      "expression": "(http.request.uri.path matches \"^/api/\")",
+      "action": "rate_limit",
+      "action_parameters": {
+        "requests_per_period": 1000,
+        "period": 60,
+        "mitigation_action": "block",
+        "mitigation_timeout": 60,
+        "counting_expression": "(http.request.uri.path matches \"^/api/\")",
+        "characteristics": [
+          "cf.colo.id",
+          "ip.src"
+        ]
+      },
+      "priority": 2,
+      "enabled": true,
+      "logging": {
+        "enabled": true
+      }
+    },
+    {
+      "name": "Login Rate Limit — Brute Force Protection",
+      "description": "Limits login and authentication endpoints to 10 requests per minute per IP to prevent credential brute-forcing.",
+      "expression": "(http.request.uri.path matches \"^/api/auth/login\" or http.request.uri.path matches \"^/api/auth/token\" or http.request.uri.path matches \"^/api/auth/2fa\")",
+      "action": "rate_limit",
+      "action_parameters": {
+        "requests_per_period": 10,
+        "period": 60,
+        "mitigation_action": "block",
+        "mitigation_timeout": 300,
+        "counting_expression": "(http.request.uri.path matches \"^/api/auth/\")",
+        "characteristics": [
+          "cf.colo.id",
+          "ip.src"
+        ]
+      },
+      "priority": 3,
+      "enabled": true,
+      "logging": {
+        "enabled": true
+      }
+    },
+    {
+      "name": "Challenge Tor Exit Nodes",
+      "description": "Issues a managed challenge to requests originating from known Tor exit nodes.",
+      "expression": "(cf.threat_score ge 50 or ip.geoip.is_in_european_union eq false and cf.threat_score ge 30)",
+      "action": "managed_challenge",
+      "priority": 4,
+      "enabled": true,
+      "logging": {
+        "enabled": true
+      }
+    },
+    {
+      "name": "Enforce HTTPS Redirect",
+      "description": "Redirects all plain HTTP requests to HTTPS to ensure transport encryption.",
+      "expression": "(not ssl)",
+      "action": "redirect",
+      "action_parameters": {
+        "url": "https://{http.host}{http.request.uri.path}",
+        "status_code": 301,
+        "preserve_query_string": true
+      },
+      "priority": 5,
+      "enabled": true,
+      "logging": {
+        "enabled": false
+      }
+    },
+    {
+      "name": "Block Suspicious User Agents",
+      "description": "Blocks requests from known vulnerability scanners, scrapers, and suspicious automated tools.",
+      "expression": "(http.user_agent contains \"sqlmap\" or http.user_agent contains \"nikto\" or http.user_agent contains \"nessus\" or http.user_agent contains \"masscan\" or http.user_agent contains \"zgrab\" or http.user_agent contains \"gobuster\" or http.user_agent contains \"dirbuster\" or http.user_agent contains \"nuclei\" or http.user_agent contains \"wpscan\" or http.user_agent contains \"python-requests\" and http.request.uri.path matches \"^/api/\")",
+      "action": "block",
+      "priority": 6,
+      "enabled": true,
+      "logging": {
+        "enabled": true
+      }
+    }
+  ],
+  "deployment_notes": {
+    "zone": "netreconapp.com",
+    "api_endpoint": "https://api.cloudflare.com/client/v4/zones/{zone_id}/rulesets",
+    "required_plan": "Pro or higher for advanced rate limiting",
+    "last_updated": "2026-03-14"
+  }
+}

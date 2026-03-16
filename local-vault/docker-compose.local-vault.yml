@@ -1,0 +1,79 @@
+version: "3.9"
+
+# ---------------------------------------------------------------------------
+# NetRecon Local Vault — Standalone Docker Compose
+#
+# Self-hosted secrets vault for on-premise NetRecon deployments.
+# Runs a vault server backed by PostgreSQL for durable storage.
+#
+# Usage:
+#   cp .env.example .env   # Edit values
+#   docker compose -f docker-compose.local-vault.yml up -d
+# ---------------------------------------------------------------------------
+
+services:
+  vault-server:
+    image: netrecon/vault-server:latest
+    container_name: netrecon-vault
+    restart: unless-stopped
+    ports:
+      - "${VAULT_PORT:-8443}:8443"
+    environment:
+      VAULT_DATABASE_URL: "postgresql://${POSTGRES_USER:-vault}:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB:-vault}"
+      VAULT_MASTER_KEY: "${VAULT_MASTER_KEY}"
+      VAULT_TLS_CERT: "/certs/server.crt"
+      VAULT_TLS_KEY: "/certs/server.key"
+      VAULT_LOG_LEVEL: "${VAULT_LOG_LEVEL:-info}"
+      VAULT_MAX_CONNECTIONS: "${VAULT_MAX_CONNECTIONS:-20}"
+      VAULT_TOKEN_TTL: "${VAULT_TOKEN_TTL:-3600}"
+      VAULT_BACKUP_ENCRYPTION_KEY: "${VAULT_BACKUP_ENCRYPTION_KEY}"
+    volumes:
+      - vault-certs:/certs:ro
+      - vault-data:/data
+      - vault-backups:/backups
+    networks:
+      - vault-network
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "https://localhost:8443/health", "--no-check-certificate"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  postgres:
+    image: postgres:16-alpine
+    container_name: netrecon-vault-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: "${POSTGRES_USER:-vault}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+      POSTGRES_DB: "${POSTGRES_DB:-vault}"
+      PGDATA: /var/lib/postgresql/data/pgdata
+    volumes:
+      - vault-pgdata:/var/lib/postgresql/data
+    networks:
+      - vault-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-vault} -d ${POSTGRES_DB:-vault}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  vault-certs:
+    driver: local
+  vault-data:
+    driver: local
+  vault-pgdata:
+    driver: local
+  vault-backups:
+    driver: local
+
+networks:
+  vault-network:
+    driver: bridge
+    name: netrecon-vault-network

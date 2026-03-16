@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "nr-api-v2.6.0",
+		"name": "NetRecon API v2.6",
+		"description": "Complete API collection for the NetRecon enterprise network security platform.\n\nSet the `base_url` and `api_key` variables before running requests.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-API-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "{{api_key}}",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "https://api.netreconapp.com/api/v1",
+			"type": "string"
+		},
+		{
+			"key": "api_key",
+			"value": "nr_live_your_api_key_here",
+			"type": "string"
+		},
+		{
+			"key": "jwt_token",
+			"value": "",
+			"type": "string"
+		}
+	],
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Login",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"var json = pm.response.json();",
+									"if (json.access_token) {",
+									"    pm.collectionVariables.set('jwt_token', json.access_token);",
+									"}"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": { "type": "noauth" },
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@company.com\",\n  \"password\": \"your-password\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/auth/login", "host": ["{{base_url}}"], "path": ["auth", "login"] }
+					}
+				},
+				{
+					"name": "Login with 2FA",
+					"request": {
+						"auth": { "type": "noauth" },
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"user@company.com\",\n  \"password\": \"your-password\",\n  \"totp_code\": \"123456\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/auth/login", "host": ["{{base_url}}"], "path": ["auth", "login"] }
+					}
+				},
+				{
+					"name": "Refresh Token",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"refresh_token\": \"{{jwt_token}}\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/auth/refresh", "host": ["{{base_url}}"], "path": ["auth", "refresh"] }
+					}
+				},
+				{
+					"name": "Get Current User",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/auth/me", "host": ["{{base_url}}"], "path": ["auth", "me"] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Scans",
+			"item": [
+				{
+					"name": "Start Scan",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"target\": \"192.168.1.0/24\",\n  \"profile\": \"normal\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/scans/start", "host": ["{{base_url}}"], "path": ["scans", "start"] }
+					}
+				},
+				{
+					"name": "Get Scan Status",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/scans/:scan_id", "host": ["{{base_url}}"], "path": ["scans", ":scan_id"], "variable": [{ "key": "scan_id", "value": "SCAN_UUID" }] }
+					}
+				},
+				{
+					"name": "Get Scan Results",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/scans/:scan_id/result", "host": ["{{base_url}}"], "path": ["scans", ":scan_id", "result"], "variable": [{ "key": "scan_id", "value": "SCAN_UUID" }] }
+					}
+				},
+				{
+					"name": "Stop Scan",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/scans/:scan_id/stop", "host": ["{{base_url}}"], "path": ["scans", ":scan_id", "stop"], "variable": [{ "key": "scan_id", "value": "SCAN_UUID" }] }
+					}
+				},
+				{
+					"name": "List Scans",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/scans?page=1&per_page=25", "host": ["{{base_url}}"], "path": ["scans"], "query": [{ "key": "page", "value": "1" }, { "key": "per_page", "value": "25" }] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Devices",
+			"item": [
+				{
+					"name": "List Devices",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/devices?page=1&per_page=25", "host": ["{{base_url}}"], "path": ["devices"], "query": [{ "key": "page", "value": "1" }, { "key": "per_page", "value": "25" }] }
+					}
+				},
+				{
+					"name": "Get Device",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/devices/:device_id", "host": ["{{base_url}}"], "path": ["devices", ":device_id"], "variable": [{ "key": "device_id", "value": "DEVICE_UUID" }] }
+					}
+				},
+				{
+					"name": "Create Device",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"ip\": \"10.0.0.50\",\n  \"mac\": \"11:22:33:44:55:66\",\n  \"hostname\": \"server-db-01\",\n  \"device_type\": \"server\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/devices", "host": ["{{base_url}}"], "path": ["devices"] }
+					}
+				},
+				{
+					"name": "Update Device",
+					"request": {
+						"method": "PUT",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"hostname\": \"server-db-01-renamed\",\n  \"tags\": [\"database\", \"production\"]\n}"
+						},
+						"url": { "raw": "{{base_url}}/devices/:device_id", "host": ["{{base_url}}"], "path": ["devices", ":device_id"], "variable": [{ "key": "device_id", "value": "DEVICE_UUID" }] }
+					}
+				},
+				{
+					"name": "Delete Device",
+					"request": {
+						"method": "DELETE",
+						"url": { "raw": "{{base_url}}/devices/:device_id", "host": ["{{base_url}}"], "path": ["devices", ":device_id"], "variable": [{ "key": "device_id", "value": "DEVICE_UUID" }] }
+					}
+				},
+				{
+					"name": "Get Device Ports",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/devices/:device_id/ports", "host": ["{{base_url}}"], "path": ["devices", ":device_id", "ports"], "variable": [{ "key": "device_id", "value": "DEVICE_UUID" }] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Alerts",
+			"item": [
+				{
+					"name": "List Alerts",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/alerts?status=open&severity=high", "host": ["{{base_url}}"], "path": ["alerts"], "query": [{ "key": "status", "value": "open" }, { "key": "severity", "value": "high" }] }
+					}
+				},
+				{
+					"name": "Get Alert",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/alerts/:alert_id", "host": ["{{base_url}}"], "path": ["alerts", ":alert_id"], "variable": [{ "key": "alert_id", "value": "ALERT_UUID" }] }
+					}
+				},
+				{
+					"name": "Acknowledge Alert",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/alerts/:alert_id/acknowledge", "host": ["{{base_url}}"], "path": ["alerts", ":alert_id", "acknowledge"], "variable": [{ "key": "alert_id", "value": "ALERT_UUID" }] }
+					}
+				},
+				{
+					"name": "Resolve Alert",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"resolution_note\": \"Firewall rule updated\"\n}"
+						},
+						"url": { "raw": "{{base_url}}/alerts/:alert_id/resolve", "host": ["{{base_url}}"], "path": ["alerts", ":alert_id", "resolve"], "variable": [{ "key": "alert_id", "value": "ALERT_UUID" }] }
+					}
+				}
+			]
+		},
+		{
+			"name": "CVE",
+			"item": [
+				{
+					"name": "Get Affected Devices",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/cve/affected?cvss_min=7.0", "host": ["{{base_url}}"], "path": ["cve", "affected"], "query": [{ "key": "cvss_min", "value": "7.0" }] }
+					}
+				},
+				{
+					"name": "Search CVEs",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/cve/search?q=log4j", "host": ["{{base_url}}"], "path": ["cve", "search"], "query": [{ "key": "q", "value": "log4j" }] }
+					}
+				},
+				{
+					"name": "Get CVE Details",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/cve/:cve_id", "host": ["{{base_url}}"], "path": ["cve", ":cve_id"], "variable": [{ "key": "cve_id", "value": "CVE-2024-3094" }] }
+					}
+				},
+				{
+					"name": "CVE Statistics",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/cve/stats", "host": ["{{base_url}}"], "path": ["cve", "stats"] }
+					}
+				},
+				{
+					"name": "Update CVE Database",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/cve/update", "host": ["{{base_url}}"], "path": ["cve", "update"] }
+					}
+				}
+			]
+		},
+		{
+			"name": "IDS",
+			"item": [
+				{
+					"name": "Get IDS Status",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/ids/status", "host": ["{{base_url}}"], "path": ["ids", "status"] }
+					}
+				},
+				{
+					"name": "Get IDS Alerts",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/ids/alerts", "host": ["{{base_url}}"], "path": ["ids", "alerts"] }
+					}
+				},
+				{
+					"name": "Start IDS",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/ids/start", "host": ["{{base_url}}"], "path": ["ids", "start"] }
+					}
+				},
+				{
+					"name": "Stop IDS",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/ids/stop", "host": ["{{base_url}}"], "path": ["ids", "stop"] }
+					}
+				}
+			]
+		},
+		{
+			"name": "Tenants",
+			"item": [
+				{
+					"name": "List Tenants",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/tenants", "host": ["{{base_url}}"], "path": ["tenants"] }
+					}
+				},
+				{
+					"name": "Get Tenant",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/tenants/:tenant_id", "host": ["{{base_url}}"], "path": ["tenants", ":tenant_id"], "variable": [{ "key": "tenant_id", "value": "TENANT_UUID" }] }
+					}
+				},
+				{
+					"name": "Create Tenant",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Acme Corp\",\n  \"slug\": \"acme\",\n  \"plan\": \"professional\",\n  \"max_devices\": 500\n}"
+						},
+						"url": { "raw": "{{base_url}}/tenants", "host": ["{{base_url}}"], "path": ["tenants"] }
+					}
+				},
+				{
+					"name": "Update Tenant",
+					"request": {
+						"method": "PUT",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Acme Corporation\",\n  \"max_devices\": 1000\n}"
+						},
+						"url": { "raw": "{{base_url}}/tenants/:tenant_id", "host": ["{{base_url}}"], "path": ["tenants", ":tenant_id"], "variable": [{ "key": "tenant_id", "value": "TENANT_UUID" }] }
+					}
+				},
+				{
+					"name": "Delete Tenant",
+					"request": {
+						"method": "DELETE",
+						"url": { "raw": "{{base_url}}/tenants/:tenant_id", "host": ["{{base_url}}"], "path": ["tenants", ":tenant_id"], "variable": [{ "key": "tenant_id", "value": "TENANT_UUID" }] }
+					}
+				},
+				{
+					"name": "Get Tenant Stats",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/tenants/:tenant_id/stats", "host": ["{{base_url}}"], "path": ["tenants", ":tenant_id", "stats"], "variable": [{ "key": "tenant_id", "value": "TENANT_UUID" }] }
+					}
+				},
+				{
+					"name": "Switch Tenant",
+					"request": {
+						"method": "POST",
+						"url": { "raw": "{{base_url}}/tenants/:tenant_id/switch", "host": ["{{base_url}}"], "path": ["tenants", ":tenant_id", "switch"], "variable": [{ "key": "tenant_id", "value": "TENANT_UUID" }] }
+					}
+				}
+			]
+		},
+		{
+			"name": "API Keys",
+			"item": [
+				{
+					"name": "List API Keys",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/api-keys", "host": ["{{base_url}}"], "path": ["api-keys"] }
+					}
+				},
+				{
+					"name": "Create API Key",
+					"request": {
+						"method": "POST",
+						"header": [{ "key": "Content-Type", "value": "application/json" }],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"CI/CD Pipeline\",\n  \"permissions\": [\"scans_read\", \"scans_write\", \"devices_read\"],\n  \"expires_in_days\": 90\n}"
+						},
+						"url": { "raw": "{{base_url}}/api-keys", "host": ["{{base_url}}"], "path": ["api-keys"] }
+					}
+				},
+				{
+					"name": "Revoke API Key",
+					"request": {
+						"method": "DELETE",
+						"url": { "raw": "{{base_url}}/api-keys/:key_id", "host": ["{{base_url}}"], "path": ["api-keys", ":key_id"], "variable": [{ "key": "key_id", "value": "KEY_UUID" }] }
+					}
+				},
+				{
+					"name": "List Available Permissions",
+					"request": {
+						"method": "GET",
+						"url": { "raw": "{{base_url}}/api-keys/permissions", "host": ["{{base_url}}"], "path": ["api-keys", "permissions"] }
+					}
+				}
+			]
+		}
+	]
+}

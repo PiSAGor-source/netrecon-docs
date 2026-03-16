@@ -1,30 +1,131 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * NetRecon Documentation — Brand Theme
  */
 
-/* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-color-primary: #1a73e8;
+  --ifm-color-primary-dark: #1565d8;
+  --ifm-color-primary-darker: #125ec9;
+  --ifm-color-primary-darkest: #0e4da5;
+  --ifm-color-primary-light: #3384ec;
+  --ifm-color-primary-lighter: #4790ee;
+  --ifm-color-primary-lightest: #6ea8f2;
+
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  --ifm-heading-font-family: 'Inter', var(--ifm-font-family-base);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #4da3ff;
+  --ifm-color-primary-dark: #2e93ff;
+  --ifm-color-primary-darker: #1f8bff;
+  --ifm-color-primary-darkest: #0070e0;
+  --ifm-color-primary-light: #6cb3ff;
+  --ifm-color-primary-lighter: #7bbbff;
+  --ifm-color-primary-lightest: #aed5ff;
+
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+
+  --ifm-background-color: #0d1117;
+  --ifm-background-surface-color: #161b22;
+  --ifm-navbar-background-color: #161b22;
+  --ifm-footer-background-color: #0d1117;
+}
+
+/* Hero Section */
+.hero--primary {
+  background: linear-gradient(135deg, #0d1117 0%, #1a2332 50%, #1a3a5c 100%);
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+}
+
+.hero__subtitle {
+  font-size: 1.25rem;
+  opacity: 0.85;
+}
+
+/* Feature Cards */
+.feature-card {
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.feature-card h3 {
+  margin-top: 0.5rem;
+  color: var(--ifm-color-primary);
+}
+
+/* Sidebar tweaks */
+.theme-doc-sidebar-menu .menu__link {
+  font-size: 0.9rem;
+}
+
+/* Code blocks */
+.prism-code {
+  border-radius: 8px;
+}
+
+/* Admonitions */
+.admonition {
+  border-radius: 8px;
+}
+
+/* Tables */
+table {
+  display: table;
+  width: 100%;
+}
+
+table th {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+[data-theme='dark'] table th {
+  background-color: var(--ifm-color-emphasis-200);
+}
+
+/* Custom badge styles */
+.badge--primary {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.badge--success {
+  background-color: #2ea043;
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero__title {
+    font-size: 2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
 }

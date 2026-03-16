@@ -1,47 +1,59 @@
 ---
+slug: /
 sidebar_position: 1
+title: Getting Started with NetRecon
+description: Network intelligence platform for MSPs and IT teams
 ---
 
-# Tutorial Intro
+# Getting Started with NetRecon
 
-Let's discover **Docusaurus in less than 5 minutes**.
+NetRecon is a network intelligence platform built for MSPs and IT teams. It provides automated network discovery, device inventory, vulnerability scanning, configuration management, and real-time monitoring — all accessible through a centralized dashboard, mobile apps, and REST API.
 
-## Getting Started
+## Choose Your Deployment
 
-Get started by **creating a new site**.
+<div className="row" style={{marginTop: '1.5rem'}}>
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+<div className="col col--6" style={{marginBottom: '1rem'}}>
 
-### What you'll need
+### Self-Hosted
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+Deploy NetRecon on your own infrastructure using Docker Compose. Full control over your data, no external dependencies.
 
-## Generate a new site
+- [System Requirements](self-hosting/requirements)
+- [Installation Guide](self-hosting/installation)
+- [Configuration Reference](self-hosting/configuration)
 
-Generate a new Docusaurus site using the **classic template**.
+**Best for:** Organizations with strict data sovereignty requirements, air-gapped networks, or existing server infrastructure.
 
-The classic template will automatically be added to your project after you run the command:
+</div>
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+<div className="col col--6" style={{marginBottom: '1rem'}}>
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+### Cloud (SaaS)
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+Get started instantly with NetRecon Cloud. No server setup required — just deploy probes and start scanning.
 
-## Start your site
+- [Quick Start Guide](cloud/quickstart)
 
-Run the development server:
+**Best for:** Teams that want to get up and running quickly without managing server infrastructure.
 
-```bash
-cd my-website
-npm run start
-```
+</div>
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+</div>
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+## Platform Components
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+| Component | Description |
+|---|---|
+| **Dashboard** | Web-based control panel for all NetRecon features |
+| **NetRecon Scanner** | Android app for on-the-go network scanning ([Learn more](scanner/overview)) |
+| **Admin Connect** | Android management app for remote administration ([Learn more](admin-connect/overview)) |
+| **Agents** | Lightweight agents for Windows, macOS, and Linux endpoints ([Installation](agents/overview)) |
+| **Probes** | Hardware or VM-based network sensors for continuous monitoring |
+| **API** | RESTful API for automation and integration ([API Reference](api/overview)) |
+
+## Need Help?
+
+- Browse the documentation using the sidebar
+- Check the [API Reference](api/overview) for integration details
+- Contact [support@netreconapp.com](mailto:support@netreconapp.com) for assistance
