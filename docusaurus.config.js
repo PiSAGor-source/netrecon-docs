@@ -46,9 +46,9 @@ const config = {
     ({
       image: 'img/docusaurus-social-card.jpg',
       colorMode: {
-        defaultColorScheme: 'dark',
-        respectPrefersColorScheme: false,
-      },
+  defaultMode: 'dark',
+  respectPrefersColorScheme: false,
+},
       navbar: {
         title: 'NetRecon Docs',
         logo: {
