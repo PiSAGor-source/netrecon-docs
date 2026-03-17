@@ -1,45 +1,45 @@
 {
-  "sidebar.docs.category.Self-Hosted": {
+  "sidebar.docsSidebar.category.Self-Hosted": {
     "message": "Självhostad",
     "description": "The label for category Self-Hosted in sidebar docs"
   },
-  "sidebar.docs.category.Cloud (SaaS)": {
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
     "message": "Moln (SaaS)",
     "description": "The label for category Cloud (SaaS) in sidebar docs"
   },
-  "sidebar.docs.category.Probe": {
+  "sidebar.docsSidebar.category.Probe": {
     "message": "Probe",
     "description": "The label for category Probe in sidebar docs"
   },
-  "sidebar.docs.category.Setup Wizard": {
+  "sidebar.docsSidebar.category.Setup Wizard": {
     "message": "Installationsguide",
     "description": "The label for category Setup Wizard in sidebar docs"
   },
-  "sidebar.docs.category.Mobile Apps": {
+  "sidebar.docsSidebar.category.Mobile Apps": {
     "message": "Mobilappar",
     "description": "The label for category Mobile Apps in sidebar docs"
   },
-  "sidebar.docs.category.Agents": {
+  "sidebar.docsSidebar.category.Agents": {
     "message": "Agenter",
     "description": "The label for category Agents in sidebar docs"
   },
-  "sidebar.docs.category.API Reference": {
+  "sidebar.docsSidebar.category.API Reference": {
     "message": "API-referens",
     "description": "The label for category API Reference in sidebar docs"
   },
-  "sidebar.docs.category.NetRecon Scanner": {
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
     "message": "NetRecon Scanner",
     "description": "The label for category NetRecon Scanner in sidebar docs"
   },
-  "sidebar.docs.category.Admin Connect": {
+  "sidebar.docsSidebar.category.Admin Connect": {
     "message": "Admin Connect",
     "description": "The label for category Admin Connect in sidebar docs"
   },
-  "sidebar.docs.category.CMod": {
+  "sidebar.docsSidebar.category.CMod": {
     "message": "CMod",
     "description": "The label for category CMod in sidebar docs"
   },
-  "sidebar.docs.category.IPAM": {
+  "sidebar.docsSidebar.category.IPAM": {
     "message": "IPAM",
     "description": "The label for category IPAM in sidebar docs"
   }

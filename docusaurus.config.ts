@@ -19,9 +19,9 @@ const config: Config = {
   i18n: {
     defaultLocale: 'en',
     locales: [
-      'en', 'ar', 'cs', 'da', 'de', 'el', 'es', 'fi', 'fr', 'hi',
-      'hu', 'it', 'ja', 'ko', 'nl', 'no', 'pl', 'pt', 'ro', 'ru',
-      'sv', 'th', 'tr', 'uk', 'vi', 'zh',
+      'en', 'ar', 'cs', 'da', 'de', 'el', 'es', 'et', 'fi', 'fr',
+      'hi', 'hu', 'it', 'ja', 'ko', 'nl', 'no', 'pl', 'pt', 'ro',
+      'ru', 'sv', 'th', 'tr', 'uk', 'vi', 'zh',
     ],
     localeConfigs: {
       en: { label: 'English', direction: 'ltr' },
@@ -31,6 +31,7 @@ const config: Config = {
       de: { label: 'Deutsch', direction: 'ltr' },
       el: { label: 'Ελληνικά', direction: 'ltr' },
       es: { label: 'Español', direction: 'ltr' },
+      et: { label: 'Eesti', direction: 'ltr' },
       fi: { label: 'Suomi', direction: 'ltr' },
       fr: { label: 'Français', direction: 'ltr' },
       hi: { label: 'हिन्दी', direction: 'ltr' },
