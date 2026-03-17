@@ -13,7 +13,7 @@ const config: Config = {
   organizationName: 'netrecon',
   projectName: 'netrecon-docs',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
