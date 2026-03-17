@@ -1,0 +1,50 @@
+{
+  "link.title.Documentation": {
+    "message": "Documenta\u021bie",
+    "description": "The title of the footer links column with title=Documentation"
+  },
+  "link.title.Products": {
+    "message": "Produse",
+    "description": "The title of the footer links column with title=Products"
+  },
+  "link.title.Support": {
+    "message": "Asisten\u021b\u0103",
+    "description": "The title of the footer links column with title=Support"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Primii pa\u0219i",
+    "description": "The label of footer link with label=Getting Started"
+  },
+  "link.item.label.Scanner": {
+    "message": "Scanner",
+    "description": "The label of footer link with label=Scanner"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Implementare agen\u021bi",
+    "description": "The label of footer link with label=Agent Deployment"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Contacteaz\u0103 asisten\u021ba",
+    "description": "The label of footer link with label=Contact Support"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "G\u0103zduire proprie",
+    "description": "The label of footer link with label=Self-Hosting"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label of footer link with label=Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label of footer link with label=NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe",
+    "description": "The label of footer link with label=NetRecon Probe"
+  },
+  "link.item.label.API Reference": {
+    "message": "Referin\u021b\u0103 API",
+    "description": "The label of footer link with label=API Reference"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Kenar çubuğunu daralt",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Kenar çubuğunu genişlet",
+    "description": "The title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Bu sayfa çöktü.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Sayfa Bulunamadı",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Aradığınız şeyi bulamadık.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Lütfen sizi orijinal URL'ye yönlendiren sitenin sahibiyle iletişime geçin ve bağlantılarının bozuk olduğunu bildirin.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Ana içeriğe geç",
+    "description": "The skip to main content label used for accessibility"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Doküman sayfaları",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Önceki",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Sonraki",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Karanlık ve aydınlık mod arasında geçiş yap (şu anda {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "karanlık mod",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "aydınlık mod",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Ana sayfa",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "İçerik haritası",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "Ara",
+    "description": "The ARIA label and placeholder for the search bar"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date} tarihinde",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " {user} tarafından",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Son güncelleme{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  }
+}

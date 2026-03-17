@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Σύμπτυξη πλαϊνής μπάρας",
+    "description": "The ARIA label and title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Ανάπτυξη πλαϊνής μπάρας",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Αυτή η σελίδα κατέρρευσε.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Η σελίδα δεν βρέθηκε",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Δεν μπορέσαμε να βρούμε αυτό που ψάχνατε.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Παρακαλούμε επικοινωνήστε με τον ιδιοκτήτη του ιστοτόπου που σας παρέπεμψε στο αρχικό URL και ενημερώστε τον ότι ο σύνδεσμος είναι κατεστραμμένος.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Μετάβαση στο κύριο περιεχόμενο",
+    "description": "The skip to main content label used for accessibility"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Σελίδες τεκμηρίωσης",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Προηγούμενο",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Επόμενο",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Εναλλαγή μεταξύ σκοτεινής και φωτεινής λειτουργίας (τρέχουσα {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "σκοτεινή λειτουργία",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "φωτεινή λειτουργία",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Αρχική σελίδα",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Ιχνηλάτηση πλοήγησης",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "Αναζήτηση",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " στις {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " από {user}",
+    "description": "The words used to describe by whom the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Τελευταία ενημέρωση{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by whom"
+  }
+}

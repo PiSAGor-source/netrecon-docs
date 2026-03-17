@@ -1,0 +1,41 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentaatio"
+  },
+  "link.title.Products": {
+    "message": "Tuotteet"
+  },
+  "link.title.Support": {
+    "message": "Tuki"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Aloittaminen"
+  },
+  "link.item.label.Scanner": {
+    "message": "Skanneri"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Agenttien käyttöönotto"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Ota yhteyttä tukeen"
+  },
+  "link.item.label.API Reference": {
+    "message": "API-viite"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "Oma palvelin"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 NetRecon. Kaikki oikeudet pidätetään. Tukea varten ota yhteyttä support@netreconapp.com"
+  }
+}

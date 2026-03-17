@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "طي الشريط الجانبي",
+    "description": "The ARIA label and title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "توسيع الشريط الجانبي",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "تعطلت هذه الصفحة.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "الصفحة غير موجودة",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "لم نتمكن من العثور على ما كنت تبحث عنه.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "يرجى التواصل مع مالك الموقع الذي أحالك إلى الرابط الأصلي وإعلامه بأن الرابط معطل.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "انتقل إلى المحتوى الرئيسي",
+    "description": "The skip to main content label used for accessibility"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "صفحات المستندات",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "السابق",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "التالي",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "التبديل بين الوضع الداكن والفاتح (حالياً {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "الوضع الداكن",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "الوضع الفاتح",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "الصفحة الرئيسية",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "مسار التنقل",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "بحث",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " في {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " بواسطة {user}",
+    "description": "The words used to describe by whom the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "آخر تحديث{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by whom"
+  }
+}

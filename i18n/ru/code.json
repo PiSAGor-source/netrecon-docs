@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "\u0421\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "\u0420\u0430\u0437\u0432\u0435\u0440\u043d\u0443\u0442\u044c \u0431\u043e\u043a\u043e\u0432\u0443\u044e \u043f\u0430\u043d\u0435\u043b\u044c",
+    "description": "The title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "\u042d\u0442\u0430 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u0434\u0430\u043b\u0430 \u0441\u0431\u043e\u0439.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u0430 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u0430",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "\u041c\u044b \u043d\u0435 \u0441\u043c\u043e\u0433\u043b\u0438 \u043d\u0430\u0439\u0442\u0438 \u0442\u043e, \u0447\u0442\u043e \u0432\u044b \u0438\u0441\u043a\u0430\u043b\u0438.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "\u041f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u0441\u0432\u044f\u0436\u0438\u0442\u0435\u0441\u044c \u0441 \u0432\u043b\u0430\u0434\u0435\u043b\u044c\u0446\u0435\u043c \u0441\u0430\u0439\u0442\u0430, \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u043d\u0430\u043f\u0440\u0430\u0432\u0438\u043b \u0432\u0430\u0441 \u043f\u043e \u0438\u0441\u0445\u043e\u0434\u043d\u043e\u043c\u0443 URL, \u0438 \u0441\u043e\u043e\u0431\u0449\u0438\u0442\u0435 \u0435\u043c\u0443, \u0447\u0442\u043e \u0441\u0441\u044b\u043b\u043a\u0430 \u043d\u0435 \u0440\u0430\u0431\u043e\u0442\u0430\u0435\u0442.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "\u041f\u0435\u0440\u0435\u0439\u0442\u0438 \u043a \u043e\u0441\u043d\u043e\u0432\u043d\u043e\u043c\u0443 \u0441\u043e\u0434\u0435\u0440\u0436\u0438\u043c\u043e\u043c\u0443",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "\u0421\u0442\u0440\u0430\u043d\u0438\u0446\u044b \u0434\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u0446\u0438\u0438",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "\u041f\u0440\u0435\u0434\u044b\u0434\u0443\u0449\u0430\u044f",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "\u0421\u043b\u0435\u0434\u0443\u044e\u0449\u0430\u044f",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "\u041f\u0435\u0440\u0435\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u043c\u0435\u0436\u0434\u0443 \u0442\u0451\u043c\u043d\u043e\u0439 \u0438 \u0441\u0432\u0435\u0442\u043b\u043e\u0439 \u0442\u0435\u043c\u043e\u0439 (\u0441\u0435\u0439\u0447\u0430\u0441 {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "\u0442\u0451\u043c\u043d\u0430\u044f \u0442\u0435\u043c\u0430",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "\u0441\u0432\u0435\u0442\u043b\u0430\u044f \u0442\u0435\u043c\u0430",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "\u0413\u043b\u0430\u0432\u043d\u0430\u044f \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0430",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "\u0425\u043b\u0435\u0431\u043d\u044b\u0435 \u043a\u0440\u043e\u0448\u043a\u0438",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "\u041f\u043e\u0438\u0441\u043a",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": ", \u0430\u0432\u0442\u043e\u0440: {user}",
+    "description": "The words used to describe by whom the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "\u041f\u043e\u0441\u043b\u0435\u0434\u043d\u0435\u0435 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0435{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by whom"
+  }
+}

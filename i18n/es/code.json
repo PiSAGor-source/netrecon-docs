@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Contraer barra lateral",
+    "description": "The ARIA label and title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Expandir barra lateral",
+    "description": "The ARIA label and title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Esta página ha fallado.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Página no encontrada",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "No pudimos encontrar lo que buscabas.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Por favor, contacta al propietario del sitio que te enlazó a la URL original y hazle saber que su enlace está roto.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Saltar al contenido principal",
+    "description": "The skip to main content label used for accessibility"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Páginas de documentación",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterior",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Siguiente",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Cambiar entre modo oscuro y claro (actualmente {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "modo oscuro",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "modo claro",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Página de inicio",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Migas de pan",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "Buscar",
+    "description": "The ARIA label and placeholder for the search bar"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " el {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " por {user}",
+    "description": "The words used to describe by who the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Última actualización{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by who"
+  }
+}

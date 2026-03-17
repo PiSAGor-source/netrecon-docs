@@ -1,0 +1,46 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "셀프 호스팅",
+    "description": "The label for category Self-Hosted in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "클라우드 (SaaS)",
+    "description": "The label for category Cloud (SaaS) in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "프로브",
+    "description": "The label for category Probe in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "설정 마법사",
+    "description": "The label for category Setup Wizard in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "모바일 앱",
+    "description": "The label for category Mobile Apps in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "에이전트",
+    "description": "The label for category Agents in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API 레퍼런스",
+    "description": "The label for category API Reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label for category NetRecon Scanner in sidebar docsSidebar (product name)"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label for category Admin Connect in sidebar docsSidebar (product name)"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod",
+    "description": "The label for category CMod in sidebar docsSidebar (product name)"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM",
+    "description": "The label for category IPAM in sidebar docsSidebar (product name)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "item.label.Documentation": {
+    "message": "Dokumentaatio",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.API Reference": {
+    "message": "API-viite",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

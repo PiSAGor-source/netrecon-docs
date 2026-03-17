@@ -1,0 +1,46 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "W\u0142asny hosting",
+    "description": "The label for category Self-Hosted in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "Chmura (SaaS)",
+    "description": "The label for category Cloud (SaaS) in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "Sonda",
+    "description": "The label for category Probe in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "Kreator konfiguracji",
+    "description": "The label for category Setup Wizard in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Aplikacje mobilne",
+    "description": "The label for category Mobile Apps in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "Agenci",
+    "description": "The label for category Agents in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "Dokumentacja API",
+    "description": "The label for category API Reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label for category NetRecon Scanner in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label for category Admin Connect in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod",
+    "description": "The label for category CMod in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM",
+    "description": "The label for category IPAM in sidebar docsSidebar"
+  }
+}

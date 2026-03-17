@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Zwi\u0144 panel boczny",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Rozwi\u0144 panel boczny",
+    "description": "The title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Ta strona uleg\u0142a awarii.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Nie znaleziono strony",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Nie mogli\u015bmy znale\u017a\u0107 tego, czego szukasz.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Skontaktuj si\u0119 z w\u0142a\u015bcicielem strony, kt\u00f3ra przekierowa\u0142a Ci\u0119 pod oryginalny adres URL i poinformuj go, \u017ce link jest uszkodzony.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Przejd\u017a do g\u0142\u00f3wnej tre\u015bci",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Strony dokumentacji",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Poprzednia",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Nast\u0119pna",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Prze\u0142\u0105cz mi\u0119dzy trybem ciemnym a jasnym (obecnie {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "tryb ciemny",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "tryb jasny",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Strona g\u0142\u00f3wna",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "\u015acie\u017cka nawigacji",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "Szukaj",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " dnia {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " przez {user}",
+    "description": "The words used to describe by whom the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Ostatnia aktualizacja{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by whom"
+  }
+}

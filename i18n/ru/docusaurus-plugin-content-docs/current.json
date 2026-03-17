@@ -1,0 +1,46 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "\u0421\u0430\u043c\u043e\u0441\u0442\u043e\u044f\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u0445\u043e\u0441\u0442\u0438\u043d\u0433",
+    "description": "The label for category Self-Hosted in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "\u041e\u0431\u043b\u0430\u043a\u043e (SaaS)",
+    "description": "The label for category Cloud (SaaS) in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "\u0417\u043e\u043d\u0434",
+    "description": "The label for category Probe in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "\u041c\u0430\u0441\u0442\u0435\u0440 \u043d\u0430\u0441\u0442\u0440\u043e\u0439\u043a\u0438",
+    "description": "The label for category Setup Wizard in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "\u041c\u043e\u0431\u0438\u043b\u044c\u043d\u044b\u0435 \u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u044f",
+    "description": "The label for category Mobile Apps in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "\u0410\u0433\u0435\u043d\u0442\u044b",
+    "description": "The label for category Agents in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "\u0421\u043f\u0440\u0430\u0432\u043e\u0447\u043d\u0438\u043a API",
+    "description": "The label for category API Reference in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label for category NetRecon Scanner in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label for category Admin Connect in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod",
+    "description": "The label for category CMod in sidebar docsSidebar"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM",
+    "description": "The label for category IPAM in sidebar docsSidebar"
+  }
+}

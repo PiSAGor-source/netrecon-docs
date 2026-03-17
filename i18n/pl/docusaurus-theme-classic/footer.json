@@ -1,0 +1,50 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentacja",
+    "description": "The title of the footer links column with title=Documentation"
+  },
+  "link.title.Products": {
+    "message": "Produkty",
+    "description": "The title of the footer links column with title=Products"
+  },
+  "link.title.Support": {
+    "message": "Wsparcie",
+    "description": "The title of the footer links column with title=Support"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Pierwsze kroki",
+    "description": "The label of footer link with label=Getting Started"
+  },
+  "link.item.label.Scanner": {
+    "message": "Skaner",
+    "description": "The label of footer link with label=Scanner"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Wdra\u017canie agent\u00f3w",
+    "description": "The label of footer link with label=Agent Deployment"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Kontakt z wsparciem",
+    "description": "The label of footer link with label=Contact Support"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "W\u0142asny hosting",
+    "description": "The label of footer link with label=Self-Hosting"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label of footer link with label=Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label of footer link with label=NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe",
+    "description": "The label of footer link with label=NetRecon Probe"
+  },
+  "link.item.label.API Reference": {
+    "message": "Dokumentacja API",
+    "description": "The label of footer link with label=API Reference"
+  }
+}

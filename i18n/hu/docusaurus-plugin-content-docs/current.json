@@ -1,0 +1,35 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "Saját üzemeltetésű"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "Felhő (SaaS)"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "Probe"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "Telepítő varázsló"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Mobilalkalmazások"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "Ügynökök"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API referencia"
+  }
+}

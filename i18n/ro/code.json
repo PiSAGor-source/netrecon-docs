@@ -1,0 +1,78 @@
+{
+  "theme.docs.sidebar.collapseButtonTitle": {
+    "message": "Restr\u00e2nge bara lateral\u0103",
+    "description": "The title attribute for collapse button of doc sidebar"
+  },
+  "theme.docs.sidebar.expandButtonTitle": {
+    "message": "Extinde bara lateral\u0103",
+    "description": "The title attribute for expand button of doc sidebar"
+  },
+  "theme.ErrorPageContent.title": {
+    "message": "Aceast\u0103 pagin\u0103 a e\u0219uat.",
+    "description": "The title of the fallback page when the page crashed"
+  },
+  "theme.NotFound.title": {
+    "message": "Pagina nu a fost g\u0103sit\u0103",
+    "description": "The title of the 404 page"
+  },
+  "theme.NotFound.p1": {
+    "message": "Nu am putut g\u0103si ceea ce c\u0103utai.",
+    "description": "The first paragraph of the 404 page"
+  },
+  "theme.NotFound.p2": {
+    "message": "Te rug\u0103m s\u0103 contactezi proprietarul site-ului care te-a trimis la URL-ul original \u0219i s\u0103-l informezi c\u0103 link-ul este defect.",
+    "description": "The 2nd paragraph of the 404 page"
+  },
+  "theme.common.skipToMainContent": {
+    "message": "Salt\u0103 la con\u021binutul principal",
+    "description": "The skip to content label used for accessibility, allowing to rapidly navigate to main content with keyboard tab/enter navigation"
+  },
+  "theme.docs.paginator.navAriaLabel": {
+    "message": "Paginile documenta\u021biei",
+    "description": "The ARIA label for the docs pagination"
+  },
+  "theme.docs.paginator.previous": {
+    "message": "Anterioar\u0103",
+    "description": "The label used to navigate to the previous doc"
+  },
+  "theme.docs.paginator.next": {
+    "message": "Urm\u0103toare",
+    "description": "The label used to navigate to the next doc"
+  },
+  "theme.colorToggle.ariaLabel": {
+    "message": "Comut\u0103 \u00eentre modul \u00eentunecat \u0219i cel luminos (momentan {mode})",
+    "description": "The ARIA label for the navbar color mode toggle"
+  },
+  "theme.colorToggle.ariaLabel.mode.dark": {
+    "message": "mod \u00eentunecat",
+    "description": "The name for the dark color mode"
+  },
+  "theme.colorToggle.ariaLabel.mode.light": {
+    "message": "mod luminos",
+    "description": "The name for the light color mode"
+  },
+  "theme.docs.breadcrumbs.home": {
+    "message": "Pagina principal\u0103",
+    "description": "The ARIA label for the home page in the breadcrumbs"
+  },
+  "theme.docs.breadcrumbs.navAriaLabel": {
+    "message": "Naviga\u021bie breadcrumb",
+    "description": "The ARIA label for the breadcrumbs"
+  },
+  "theme.SearchBar.label": {
+    "message": "Caut\u0103",
+    "description": "The ARIA label and placeholder for search button"
+  },
+  "theme.lastUpdated.atDate": {
+    "message": " pe {date}",
+    "description": "The words used to describe on which date a page has been last updated"
+  },
+  "theme.lastUpdated.byUser": {
+    "message": " de {user}",
+    "description": "The words used to describe by whom the page has been last updated"
+  },
+  "theme.lastUpdated.lastUpdatedAtBy": {
+    "message": "Ultima actualizare{atDate}{byUser}",
+    "description": "The sentence used to display when a page has been last updated, and by whom"
+  }
+}

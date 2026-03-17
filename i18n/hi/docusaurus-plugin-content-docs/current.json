@@ -1,0 +1,35 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "स्व-होस्टेड"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "क्लाउड (SaaS)"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "Probe"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "सेटअप विज़ार्ड"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "मोबाइल ऐप्स"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "एजेंट्स"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API संदर्भ"
+  }
+}

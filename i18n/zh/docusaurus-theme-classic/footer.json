@@ -1,0 +1,50 @@
+{
+  "link.title.Documentation": {
+    "message": "文档",
+    "description": "The title of the footer links column with title=Documentation"
+  },
+  "link.title.Products": {
+    "message": "产品",
+    "description": "The title of the footer links column with title=Products"
+  },
+  "link.title.Support": {
+    "message": "支持",
+    "description": "The title of the footer links column with title=Support"
+  },
+  "link.item.label.Getting Started": {
+    "message": "快速入门",
+    "description": "The label of footer link with label=Getting Started"
+  },
+  "link.item.label.Scanner": {
+    "message": "扫描器",
+    "description": "The label of footer link with label=Scanner"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "代理部署",
+    "description": "The label of footer link with label=Agent Deployment"
+  },
+  "link.item.label.Contact Support": {
+    "message": "联系支持",
+    "description": "The label of footer link with label=Contact Support"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "自托管",
+    "description": "The label of footer link with label=Self-Hosting"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label of footer link with label=Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label of footer link with label=NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe",
+    "description": "The label of footer link with label=NetRecon Probe"
+  },
+  "link.item.label.API Reference": {
+    "message": "API 参考",
+    "description": "The label of footer link with label=API Reference"
+  }
+}

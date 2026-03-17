@@ -1,0 +1,41 @@
+{
+  "link.title.Documentation": {
+    "message": "दस्तावेज़ीकरण"
+  },
+  "link.title.Products": {
+    "message": "उत्पाद"
+  },
+  "link.title.Support": {
+    "message": "सहायता"
+  },
+  "link.item.label.Getting Started": {
+    "message": "शुरू करें"
+  },
+  "link.item.label.Scanner": {
+    "message": "स्कैनर"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "एजेंट परिनियोजन"
+  },
+  "link.item.label.Contact Support": {
+    "message": "सहायता से संपर्क करें"
+  },
+  "link.item.label.API Reference": {
+    "message": "API संदर्भ"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "स्व-होस्टिंग"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 NetRecon. सर्वाधिकार सुरक्षित। सहायता के लिए support@netreconapp.com पर संपर्क करें"
+  }
+}

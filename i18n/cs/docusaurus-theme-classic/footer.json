@@ -1,0 +1,54 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentace",
+    "description": "The title of the footer links column with title=Documentation in the footer"
+  },
+  "link.title.Products": {
+    "message": "Produkty",
+    "description": "The title of the footer links column with title=Products in the footer"
+  },
+  "link.title.Support": {
+    "message": "Podpora",
+    "description": "The title of the footer links column with title=Support in the footer"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Začínáme",
+    "description": "The label of footer link with label=Getting Started linking to /docs/intro"
+  },
+  "link.item.label.Scanner": {
+    "message": "Skener",
+    "description": "The label of footer link with label=Scanner"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label of footer link with label=Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label of footer link with label=NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe",
+    "description": "The label of footer link with label=NetRecon Probe"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Nasazení agenta",
+    "description": "The label of footer link with label=Agent Deployment"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Kontaktovat podporu",
+    "description": "The label of footer link with label=Contact Support"
+  },
+  "link.item.label.API Reference": {
+    "message": "API Reference",
+    "description": "The label of footer link with label=API Reference"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "Vlastní hosting",
+    "description": "The label of footer link with label=Self-Hosting"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 NetRecon. Všechna práva vyhrazena. Pro podporu kontaktujte support@netreconapp.com",
+    "description": "The footer copyright"
+  }
+}

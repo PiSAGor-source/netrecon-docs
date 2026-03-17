@@ -1,0 +1,35 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "Oma palvelin"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "Pilvi (SaaS)"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "Probe"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "Asennusvelho"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Mobiilisovellukset"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "Agentit"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "API-viite"
+  }
+}

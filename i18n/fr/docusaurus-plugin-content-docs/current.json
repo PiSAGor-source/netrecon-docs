@@ -1,0 +1,35 @@
+{
+  "sidebar.docsSidebar.category.Self-Hosted": {
+    "message": "Auto-hébergé"
+  },
+  "sidebar.docsSidebar.category.Cloud (SaaS)": {
+    "message": "Cloud (SaaS)"
+  },
+  "sidebar.docsSidebar.category.Probe": {
+    "message": "Probe"
+  },
+  "sidebar.docsSidebar.category.Setup Wizard": {
+    "message": "Assistant de configuration"
+  },
+  "sidebar.docsSidebar.category.Mobile Apps": {
+    "message": "Applications mobiles"
+  },
+  "sidebar.docsSidebar.category.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "sidebar.docsSidebar.category.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "sidebar.docsSidebar.category.CMod": {
+    "message": "CMod"
+  },
+  "sidebar.docsSidebar.category.IPAM": {
+    "message": "IPAM"
+  },
+  "sidebar.docsSidebar.category.Agents": {
+    "message": "Agents"
+  },
+  "sidebar.docsSidebar.category.API Reference": {
+    "message": "Référence API"
+  }
+}

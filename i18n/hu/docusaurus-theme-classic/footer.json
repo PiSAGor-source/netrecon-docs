@@ -1,0 +1,41 @@
+{
+  "link.title.Documentation": {
+    "message": "Dokumentáció"
+  },
+  "link.title.Products": {
+    "message": "Termékek"
+  },
+  "link.title.Support": {
+    "message": "Támogatás"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Első lépések"
+  },
+  "link.item.label.Scanner": {
+    "message": "Szkenner"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Ügynök telepítés"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Kapcsolatfelvétel a támogatással"
+  },
+  "link.item.label.API Reference": {
+    "message": "API referencia"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "Saját üzemeltetés"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 NetRecon. Minden jog fenntartva. Támogatásért forduljon a support@netreconapp.com címhez"
+  }
+}

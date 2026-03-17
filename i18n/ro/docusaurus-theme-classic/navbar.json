@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "NetRecon",
+    "description": "The title in the navbar"
+  },
+  "item.label.Documentation": {
+    "message": "Documenta\u021bie",
+    "description": "Navbar item with label Documentation"
+  },
+  "item.label.API Reference": {
+    "message": "Referin\u021b\u0103 API",
+    "description": "Navbar item with label API Reference"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

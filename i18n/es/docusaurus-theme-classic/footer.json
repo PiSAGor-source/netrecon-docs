@@ -1,0 +1,41 @@
+{
+  "link.title.Documentation": {
+    "message": "Documentación"
+  },
+  "link.title.Products": {
+    "message": "Productos"
+  },
+  "link.title.Support": {
+    "message": "Soporte"
+  },
+  "link.item.label.Getting Started": {
+    "message": "Primeros pasos"
+  },
+  "link.item.label.Scanner": {
+    "message": "Escáner"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "Despliegue de agentes"
+  },
+  "link.item.label.Contact Support": {
+    "message": "Contactar soporte"
+  },
+  "link.item.label.API Reference": {
+    "message": "Referencia de API"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "Autoalojamiento"
+  },
+  "copyright": {
+    "message": "Copyright © 2026 NetRecon. Todos los derechos reservados. Para soporte, contacta a support@netreconapp.com"
+  }
+}

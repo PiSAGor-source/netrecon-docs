@@ -1,0 +1,50 @@
+{
+  "link.title.Documentation": {
+    "message": "เอกสาร",
+    "description": "The title of the footer links column with title=Documentation"
+  },
+  "link.title.Products": {
+    "message": "ผลิตภัณฑ์",
+    "description": "The title of the footer links column with title=Products"
+  },
+  "link.title.Support": {
+    "message": "สนับสนุน",
+    "description": "The title of the footer links column with title=Support"
+  },
+  "link.item.label.Getting Started": {
+    "message": "เริ่มต้นใช้งาน",
+    "description": "The label of footer link with label=Getting Started"
+  },
+  "link.item.label.Scanner": {
+    "message": "สแกนเนอร์",
+    "description": "The label of footer link with label=Scanner"
+  },
+  "link.item.label.Agent Deployment": {
+    "message": "การติดตั้งเอเจนต์",
+    "description": "The label of footer link with label=Agent Deployment"
+  },
+  "link.item.label.Contact Support": {
+    "message": "ติดต่อฝ่ายสนับสนุน",
+    "description": "The label of footer link with label=Contact Support"
+  },
+  "link.item.label.Self-Hosting": {
+    "message": "โฮสต์ด้วยตนเอง",
+    "description": "The label of footer link with label=Self-Hosting"
+  },
+  "link.item.label.Admin Connect": {
+    "message": "Admin Connect",
+    "description": "The label of footer link with label=Admin Connect"
+  },
+  "link.item.label.NetRecon Scanner": {
+    "message": "NetRecon Scanner",
+    "description": "The label of footer link with label=NetRecon Scanner"
+  },
+  "link.item.label.NetRecon Probe": {
+    "message": "NetRecon Probe",
+    "description": "The label of footer link with label=NetRecon Probe"
+  },
+  "link.item.label.API Reference": {
+    "message": "เอกสารอ้างอิง API",
+    "description": "The label of footer link with label=API Reference"
+  }
+}
